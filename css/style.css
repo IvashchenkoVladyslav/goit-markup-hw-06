@@ -514,6 +514,10 @@ img {
   margin: auto;
 }
 
+.subscribe-input::placeholder{
+  padding-left: 16px;
+}
+
 .subscribe-input:focus {
   color: #ffffff;
 }
