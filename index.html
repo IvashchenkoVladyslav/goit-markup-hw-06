@@ -394,8 +394,8 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-all">
-        <div class="footer-studio">
+      <div class="container footer-item">
+        <div class="footer-studio footer-all">
           <a class="footer-logo link" href="./index.html">
             <span class="footer-accent">Web</span>Studio</a
           >
@@ -438,10 +438,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-item">
+          <p class="text-subscribe">Subscribe</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              name=""
+              class="subscribe-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <span>
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <!-- is-hidden в бекдроп -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
           <svg class="icon-close" width="24" height="24">
@@ -513,6 +531,25 @@
               class="modal-comment"
               placeholder="Text input"
             ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+              class="modal-check slogan"
+              required
+            />
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check-link link" href="">Privacy Policy</a>
+            </label>
           </div>
           <button class="button-submit" type="submit">Send</button>
         </form>
